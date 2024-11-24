@@ -1,0 +1,501 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    color: #fff;
+    background-color: #000;
+    height: 100vh;
+    width: 100%;
+}   
+
+header {
+    background-color: black;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px 50px;
+    width: 100%;
+    z-index: 10;
+}
+
+.logo {
+    color: #f1c40f;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 7px;
+    animation: fadeInZoom 1s ease forwards;
+}
+
+.hamburger {
+    display: none; 
+    border: none;
+    background: transparent; 
+    cursor: pointer;
+    font-size: 24px;
+    color: #f1c40f; 
+    z-index: 11;
+}
+
+.nav-list {
+    margin-top: 7px;
+    text-decoration: none;
+    display: flex;
+    list-style: none;
+    animation: fadeInZoom 1s ease forwards;
+}
+
+.nav-list li {
+    margin: 0 20px;
+}
+
+.nav-list li a {
+    font-size: 20px;
+    font-weight: bold;
+    color: #f1c40f;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.nav-list li a:hover {
+    color: aqua;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    margin-left: 100px;
+}
+
+.hero-content {
+    max-width: 500px;
+    background: transparent;
+}
+
+.foto {
+    width: 400px;
+    margin-right: 10px;
+    border-radius: 30px;
+    opacity: 0;
+    animation: fadeInZoom 1s ease forwards;
+}
+
+@keyframes fadeInZoom {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin: 0;
+    text-align: left;
+    opacity: 0;
+    animation: fadeInZoom 1s ease forwards;
+}
+
+.hero p {
+    font-size: 15px;
+    margin: 20px 0;
+    line-height: 1.5;
+    text-align: left;
+    opacity: 0;
+    animation: fadeInZoom 1s ease forwards;
+}
+
+.learn-more {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #000;
+    background-color: #f1c40f;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+    opacity: 0;
+    animation: fadeInZoom 1s ease forwards;
+}
+
+.learn-more:hover {
+    background: #e67e22;
+}
+
+footer {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.social-icons {
+    display: flex;
+    list-style: none;
+}
+
+.social-icons li {
+    margin: 0 10px;
+}
+
+.about {
+    padding-top: 90px;
+}
+
+.Walikota {
+    width: 40%;
+    display: flex;
+    margin-left: 30%;
+    gap: 3rem;
+}
+
+.Wakilwali {
+    width: 40%;
+    margin-top: 30px;
+    display: flex;
+    margin-left: 30%;
+    gap: 3rem;
+}
+
+.wali {
+    display: flex;
+    flex-wrap: wrap;
+    letter-spacing: 0.1rem;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.wali img {
+    width: 10%;
+    height: 10%;
+}
+
+.wali h1 {
+    display: block;
+    font-size: 40px;
+    margin-top: 70px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+.wali h2{
+    color: #f1c40f;
+}
+
+.wali p{
+    margin-top: -20px;
+}
+
+.services{
+    display: flex;
+    width: 100%;
+    background-size: cover;
+    padding-top: 100px;
+    padding-left: 10%;
+}
+
+.services h1 {
+    text-align: baseline;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    font-size: 50px;
+    color: #f1c40f;
+}
+
+.services p {
+    align-items: center;
+    justify-content: center;
+    text-align: baseline;
+    margin-top: 10px;
+    font-size:20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+}
+
+.services-content2 {
+    padding-left: 30%;
+}
+
+.services-content2 h1 {
+    text-align: baseline;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    font-size: 50px;
+    color: #f1c40f;
+}
+
+.services-content2 p {
+    align-items: center;
+    justify-content: center;
+    text-align: baseline;
+    margin-top: 10px;
+    font-size:20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+}
+
+.services-content3 {
+    padding-left: 50%;
+}
+
+.services-content3 h1 {
+    text-align: baseline;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    font-size: 50px;
+    color: #f1c40f;
+}
+
+.services-content3 p {
+    align-items: center;
+    justify-content: center;
+    text-align: baseline;
+    margin-top: 10px;
+    font-size:20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+    margin-bottom: 100px;
+}
+
+.slideshow-container {
+    padding-left: 24%;
+}
+
+.slide {
+    margin-top: 15%;
+}
+
+.slide img {
+    width: 1000px;
+}
+
+.slideshow-container a {
+    fon
+}
+
+.food {
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-bottom: 2%;
+    margin-left: 14%;
+    margin-top: 10%;
+}
+
+.makanan {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.sate {
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.makanan img {
+    width: 20vw;
+    height: 15vw;
+    cursor: pointer;
+}
+
+img {
+    border-radius: 10px;
+}
+
+.makanan h1 {
+    margin-top: 20px;
+}
+
+/* Responsif untuk HP */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    .hamburger {
+        display: block;
+        font-weight: lighter;
+    }
+
+    .menu-toggle .bar {
+        display: block;
+        background-color: transparent; 
+    }
+
+    .nav-list {
+        display: none; 
+        flex-direction: column;
+        align-items: end;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        background-color: transparent;
+        width: 100%;
+        padding-top: 0 ;
+        padding-right: 20px;
+        z-index: 10;
+    }
+
+    .nav-list.active {
+        display: flex; /* Ditampilkan saat tombol hamburger diklik */
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .nav-list li a {
+        font-size: 16px;
+    }
+
+    .foto {
+        width: 300px;
+    }
+
+    .hero-content {
+        padding: 20px;
+        display: contents;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .hero p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .learn-more {
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .about h1 {
+        font-size: 25px;
+        padding: 10px;
+    }
+
+    .services-content h1 {
+        font-size: 30px;
+    }
+
+    .services-content p {
+        font-size: 16px;
+    }
+
+    .services2 p, .services3 p {
+        font-size: 14px;
+    }
+}
+
+/* Animasi default (sebelum elemen terlihat) */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Ketika elemen terlihat */
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsif untuk Laptop (layar 1024px hingga 1366px) */
+@media (min-width: 1024px) and (max-width: 1366px) {
+    header {
+        padding: 15px 40px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .nav-list li {
+        margin: 0 15px;
+    }
+
+    .nav-list li a {
+        font-size: 18px;
+    }
+
+    .hero-content {
+        padding: 40px;
+        max-width: 700px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+        text-align: left;
+    }
+
+    .hero p {
+        font-size: 16px;
+        text-align: left;
+        line-height: 1.6;
+    }
+
+    .learn-more {
+        font-size: 16px;
+        padding: 12px 25px;
+    }
+
+    .about h1 {
+        font-size: 30px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .services-content h1 {
+        font-size: 40px;
+    }
+
+    .services-content p {
+        font-size: 18px;
+        line-height: 1.8;
+    }
+
+    .services2 p, .services3 p {
+        font-size: 16px;
+        margin: 10px;
+    }
+}
