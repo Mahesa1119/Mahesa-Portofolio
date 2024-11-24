@@ -471,15 +471,15 @@ img {
     }
 
     .Walikota {
-        width: 340px;
-        margin-left: 3%;
+        width: 355px;
+        margin-left: 0%;
         justify-content: center;
         align-items: center;
     }
 
     .Wakilwali {
-        width: 340px;
-        margin-left: 3%;
+        width: 355px;
+        margin-left: 0%;
         justify-content: center;
         align-items: center;
     }
@@ -512,7 +512,7 @@ img {
 
     .services-content, .services-content2, .services-content3 {
         padding-left: 5%;
-        padding-top: 0px;
+        padding-top: 5px;
         text-align: baseline;
     }
 
@@ -549,7 +549,7 @@ img {
         flex-wrap: wrap;
         flex-direction: row;
         padding-bottom: 2%;
-        margin-left: 9%;
+        margin-left: 5%;
         margin-top: 10%;
     }
 

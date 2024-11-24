@@ -468,18 +468,19 @@ img {
         justify-content: center;
         align-items: center;
         text-align: center;
+        padding-bottom: 0;
     }
 
     .Walikota {
-        width: 340px;
-        margin-left: 3%;
+        width: 355px;
+        margin-left: 0%;
         justify-content: center;
         align-items: center;
     }
 
     .Wakilwali {
-        width: 340px;
-        margin-left: 3%;
+        width: 355px;
+        margin-left: 0%;
         justify-content: center;
         align-items: center;
     }
