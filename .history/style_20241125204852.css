@@ -595,7 +595,12 @@ img {
     }
 
     .nasiliwet p {
-        width: 140px;
+        margin-left: -15%;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
     }
 
 }

@@ -563,7 +563,7 @@ img {
     }
 
     .slide p {
-        margin-left: -29%;
+        margin-left: -;
     }
     
     .food {
@@ -588,14 +588,6 @@ img {
 
     .food .sate {
         width: 40%;
-    }
-
-    .nasiliwet {
-        margin-left: 0;
-    }
-
-    .nasiliwet p {
-        width: 140px;
     }
 
 }

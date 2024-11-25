@@ -11,18 +11,21 @@ window.addEventListener('scroll', function() {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-    const targets = document.querySelectorAll(".fade-in-target");
+    const elements = document.querySelectorAll(".fade-in");
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("fade-in");
-                observer.unobserve(entry.target); // Optional: Stop observing after animating
-            }
-        });
-    }, { threshold: 0.1 });
+    const observer = new IntersectionObserver(
+        (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                    observer.unobserve(entry.target); // Hanya animasi sekali
+                }
+            });
+        },
+        { threshold: 0.5 } // Elemen terlihat 20% sebelum animasi
+    );
 
-    targets.forEach((target) => observer.observe(target));
+    elements.forEach(element => observer.observe(element));
 });
 
 let slideIndex = 0;

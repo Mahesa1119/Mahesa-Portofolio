@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     targets.forEach((target) => observer.observe(target));
 });
 
+
 let slideIndex = 0;
 showSlides(slideIndex);
 

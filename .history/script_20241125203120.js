@@ -11,18 +11,20 @@ window.addEventListener('scroll', function() {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-    const targets = document.querySelectorAll(".fade-in-target");
+    const elements = document.querySelectorAll(".fade-in-scroll");
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("fade-in");
-                observer.unobserve(entry.target); // Optional: Stop observing after animating
-            }
-        });
-    }, { threshold: 0.1 });
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                }
+            });
+        },
+        { threshold: 0.1 }
+    );
 
-    targets.forEach((target) => observer.observe(target));
+    elements.forEach((el) => observer.observe(el));
 });
 
 let slideIndex = 0;
